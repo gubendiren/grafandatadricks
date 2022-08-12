@@ -1,5 +1,7 @@
 FROM grafana/grafana-oss
 
+USER root
+
 RUN apk update 
 RUN apk add curl
 # RUN apt update && apt install -y unixodbc unixodbc-dev freetds-dev sqsh tdsodbc unzip libsasl2-modules-gssapi-mit
